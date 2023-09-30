@@ -13,3 +13,9 @@ Atividade para treinar requisições AJAX e JSON
 ## Atividade 03 - Projeto Final
 
 Projeto treinando todas as habilidades aprendidas anteriormente, tema escolhido de pegar letras de uma música ateravés de uma API
+
+# WebDev-2023.2
+
+Repositório para a matéria de Desenvolvimento Web II, UFRN.
+
+## Atividade 01
