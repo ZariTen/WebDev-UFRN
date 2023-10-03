@@ -4,9 +4,16 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Projeto 01 - Login</title>
+<link rel="stylesheet" type="text/css" href="estilo.css">
 </head>
 <body>
-	<h1>Esse é o arquivo index.jsp</h1>
+	<div>
+		<form action="telaLoginServlet" method="post" id="formLogin">
+			<input type="text" name="usuario" placeholder="Nome de usuário">
+			<input type="password" name="senha" placeholder="Senha">
+			<input type="submit" name="enviar" value="Logar">
+		</form>
+	</div>
 </body>
 </html>
