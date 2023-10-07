@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Projeto 01 - Menu</title>
-    <link rel="stylesheet" type="text/css" href="menu.css">
+    <link rel="stylesheet" type="text/css" href="css/menu.css">
 </head>
 <body>
     <h1>Menu Principal</h1>

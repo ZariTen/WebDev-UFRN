@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Projeto 01 - Cadastro</title>
-    <link rel="stylesheet" type="text/css" href="cadastro.css">
+    <link rel="stylesheet" type="text/css" href="css/cadastro.css">
 </head>
 <body>
     <h1>Cadastrar Contato</h1>
