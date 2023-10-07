@@ -20,6 +20,7 @@ public class telaLoginServlet extends HttpServlet {
         String senha = request.getParameter("senha");
         
         if (usuario.equals("admin") && senha.equals("admin")){
+        	sessao.setAttribute("usuario", usuario);
         	response.sendRedirect("telaMenu.jsp");
         } else {
         	response.sendRedirect("index.jsp");

@@ -2,17 +2,26 @@ package modelo;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Iterator;
 
 public class BancoContatos {
+    private static BancoContatos instancia = null;
     private List<Contato> listaDeContatos;
 
-    public BancoContatos() {
+    private BancoContatos() {
         listaDeContatos = new ArrayList<>();
     }
 
+    public static BancoContatos getInstancia() {
+        if (instancia == null) {
+            instancia = new BancoContatos();
+        }
+        return instancia;
+    }
+
     public void adicionarContato(Contato contato) {
-        listaDeContatos.add(contato);
+        if (!listaDeContatos.contains(contato)) {
+            listaDeContatos.add(contato);
+        }
     }
 
     public List<Contato> obterTodosContatos() {
@@ -20,13 +29,7 @@ public class BancoContatos {
     }
 
     public void removerContato(Contato contato) {
-        Iterator<Contato> iterator = listaDeContatos.iterator();
-        while (iterator.hasNext()) {
-            Contato c = iterator.next();
-            if (c.equals(contato)) {
-                iterator.remove();
-            }
-        }
+        listaDeContatos.remove(contato);
     }
 
 }

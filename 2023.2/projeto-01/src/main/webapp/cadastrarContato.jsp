@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Cadastrar Contato</h1>
-    <form action="processarCadastro.jsp" method="post">
+    <form action="cadastroContatoServlet" method="post">
         <label for="nome">Nome:</label>
         <input type="text" id="nome" name="nome" required><br><br>
 
