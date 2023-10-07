@@ -44,7 +44,7 @@ public class cadastroServlet extends HttpServlet {
         BancoContatos bancoContatos = BancoContatos.getInstancia();
         bancoContatos.adicionarContato(contato);
 
-        response.sendRedirect("cadastroSucesso.jsp");
+        response.sendRedirect("telaMenu.jsp");
     }
 }
 

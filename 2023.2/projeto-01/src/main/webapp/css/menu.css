@@ -8,8 +8,9 @@ body {
 }
 
 h1 {
-  font-size: 40px;
-  margin-top: 20px;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
 }
 
 ul {

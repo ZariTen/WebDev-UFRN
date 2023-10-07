@@ -31,7 +31,7 @@ public class listarContatosServlet extends HttpServlet {
 
         PrintWriter out = response.getWriter();
 
-        out.println("<html><head><title>Lista de Contatos</title></head><body>");
+        out.println("<html><head><title>Lista de Contatos</title><link rel=\"stylesheet\" type=\"text/css\" href=\"css/listar.css\"></head><body>");
         out.println("<h1>Lista de Contatos</h1>");
         out.println("<ul>");
 
