@@ -32,5 +32,14 @@ public class BancoContatos {
         listaDeContatos.remove(contato);
     }
 
+	public Contato buscarContatoPorNome(String nome) {
+		for (Contato contato : listaDeContatos) {
+            if (contato.getNome().equalsIgnoreCase(nome)) {
+                return contato;
+            }
+        }
+        return null;
+	}
+
 }
 

@@ -11,7 +11,7 @@
         <li><a href="cadastrarContato.jsp">Cadastrar novo contato</a></li>
         <li><a href="listarContatosServlet">Listar contatos salvos</a></li>
         <li><a href="verDetalhes.jsp">Ver detalhes do contato</a></li>
-        <li><a href="excluirContato.jsp">Excluir um contato</a></li>
+        <li><a href="excluirUsuario.jsp">Excluir um contato</a></li>
     </ul>
 </body>
 </html>

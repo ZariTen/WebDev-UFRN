@@ -10,6 +10,7 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 import modelo.BancoContatos;
 import modelo.Contato;
 
@@ -20,6 +21,11 @@ public class cadastroServlet extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+    	HttpSession session = request.getSession();
+        if (session == null || session.getAttribute("usuario") == null) {
+            response.sendRedirect("index.jsp");
+            return;
+        }
         String nome = request.getParameter("nome");
         String telefoneCelular = request.getParameter("telefoneCelular");
         String telefoneResidencial = request.getParameter("telefoneResidencial");
