@@ -14,7 +14,9 @@ import modelo.Contato;
 
 @WebServlet("/verDetalhesServlet")
 public class verDetalhesServlet extends HttpServlet {
-    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+    private static final long serialVersionUID = 1L;
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
     	HttpSession session = request.getSession();
         if (session == null || session.getAttribute("usuario") == null) {
