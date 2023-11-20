@@ -34,11 +34,10 @@ public class ProdutosEntity {
     private String dataValidade;
 
     @Positive(message = "O estoque deve ser um número positivo.")
-    private int estoque;
+    private Integer estoque;
 
     @Size(max = 50, message = "O nome do fornecedor não pode ter mais que 50 caracteres.")
     private String fornecedor;
 
-    @Positive(message = "O número de vendas deve ser um número positivo.")
-    private boolean ativo;
+    private boolean ativo = true;
 }
